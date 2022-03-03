@@ -32,7 +32,7 @@
 /*Navigation*/
 
 header{
-  width: 100%;
+  width: 100%; 
   position: fixed;
   background: #ffffff;
   display: flex;
@@ -83,6 +83,14 @@ nav ul li a {
   font-size: 20px;
   font-weight: 500;
   text-decoration: none;
+}
+
+@media (max-width: 720px){
+  nav ul {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 /*Image*/
@@ -154,7 +162,7 @@ img.bg-photo{
   margin: 50px auto;
 }
 
-/*L'entrprise COMITARI*/
+/*L'entreprise COMITARI*/
 
 .container-sp{
   position: relative;
@@ -185,6 +193,7 @@ img.bg-photo{
 
 .container-sp .sp-img img{
   width: 400px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 /*Animation*/
@@ -213,8 +222,8 @@ img.bg-photo{
 
 .animation .anim3{
   position: absolute;
-  top: 156px;
-  right: 1292px;
+  top: 356px;
+  right: 1142px;
   width: 130px;
   height: 130px;
   border-radius: 50%;
@@ -225,7 +234,7 @@ img.bg-photo{
 .animation .anim4{
   position: absolute;
   top: -62px;
-  left: 133px;
+  left: 66px;
   width: 0;
   height: 0;
   border-left: 50px solid transparent;
@@ -235,7 +244,79 @@ img.bg-photo{
   z-index: -1;
 }
 
+@media (max-width: 1189px){
+  .animation .anim3{
+    top: 356px;
+    right: 942px;
+  }
+
+  .animation .anim4{
+    top: -62px;
+    left: -10px;
+  }
+}
+
+@media (max-width: 989px){
+  .container-sp .sp-text{
+    width: 800px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 941px){
+  
+}
+
+@media (max-width: 915px){
+  .animation .anim2{
+    position: absolute;
+    top: -65px;
+    right: -62px;
+  }
+
+  .animation .anim3{
+    top: 430px;
+    right: 47px;
+  }
+}
+
+@media (max-width: 540px){
+  .animation .anim1{
+    bottom: -53px;
+    right: 315px;
+  }
+
+  .animation .anim4{
+    top: -62px;
+    left: -105px;
+  }
+
+  .animation .anim3{
+    top: 430px;
+    right: -131px;
+  }
+}
+
+@media (max-width: 400px){
+  .container-sp{
+    margin: 20px;
+  }
+
+  .container-sp .sp-text{
+    margin-right: 0;
+  }
+
+  .container-sp .sp-img img{
+    width: 100%;
+  }
+
+  .animation{
+    display: none;
+  }
+}
+
 /*Valeur*/
+
 .valeur{
   background: url("../photos/background-accueil.png") no-repeat bottom;
 }
@@ -268,6 +349,7 @@ img.bg-photo{
 .card-content{
   background-color: #FFFFFF;
   margin-bottom: 80px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
 .valeur-card .card-content img{
@@ -286,6 +368,14 @@ img.bg-photo{
   color: var(--primary-blue);
   width: 300px;
   padding: 0 20px 20px;
+}
+
+@media (max-width: 400px){
+  .valeur-content img{
+    width: 70px;
+    margin-bottom: 20px;
+  }
+
 }
 
 

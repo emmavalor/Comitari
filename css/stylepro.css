@@ -9,11 +9,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; 
   font-family: "Quicksand";
 }
 
-/* ROOT */
+/*********************** ROOT ************************/
+
 
 :root{
   --primary-blue: #322f7c;
@@ -29,7 +30,8 @@
   --red: #b41946;
 }
 
-/*Navigation*/
+/*********************** NAVIGATION ************************/
+
 
 header{
   text-align: center;
@@ -93,7 +95,8 @@ nav ul li a.active{
   color: #FFF;
 }
 
-/*Image*/
+/*********************** IMAGE ************************/
+
 
 .img-accueil-pro {
   position: relative;
@@ -118,7 +121,8 @@ nav ul li a.active{
   transform: translate(-50%, -50%);
 }
 
-/*Separateur*/
+/*********************** SEPARATEUR ************************/
+
 
 .separateur{
   width: 70%;
@@ -127,7 +131,8 @@ nav ul li a.active{
   margin: 50px auto;
 }
 
-/*Section accompagnent*/
+/*********************** SECTION ACCOMPAGNEMENT ************************/
+
 
 .accompagnent{
   margin: 110px 50px;
@@ -151,7 +156,8 @@ nav ul li a.active{
   font-size: 25px;
 }
 
-/*Fondatrice*/
+/*********************** FONDATRICE ************************/
+
 
 .title{
   text-align: center;
@@ -352,7 +358,8 @@ nav ul li a.active{
   transform: rotate(10deg);
 }
 
-/*Footer*/
+/*********************** FOOTER ************************/
+
 
 .footer-photo{
   background: url("../photos/footer-photo.png") no-repeat;
@@ -622,7 +629,8 @@ footer .bottom-details .bottom_text{
   }
 }
 
-/*Section formation*/
+/*********************** SECTION FORMATION ************************/
+
 
 section.formation{
   width: 80%;
@@ -849,13 +857,98 @@ section.diplome .diplome-container .dipome-content:nth-child(4){
   padding: 40px;
 }
 
+section.diplome .diplome-container .dipome-content:hover{
+  -webkit-box-shadow: 13px 14px 5px rgba(220,144,28,0.8); 
+  box-shadow: 13px 14px 5px rgba(220,144,28,0.8);
+}
+
+section.diplome .diplome-container .dipome-content:nth-child(2):hover{
+  -webkit-box-shadow: 13px 14px 5px rgba(210,120,170,0.8); 
+  box-shadow: 13px 14px 5px rgba(210,120,170,0.8);
+}
+
+section.diplome .diplome-container .dipome-content:nth-child(3):hover{
+  -webkit-box-shadow: 13px 14px 5px rgba(125,90,160,0.8); 
+  box-shadow: 13px 14px 5px rgba(125,90,160,0.8);
+}
+
+section.diplome .diplome-container .dipome-content:nth-child(4):hover{
+  -webkit-box-shadow: 13px 14px 5px rgba(180,25,70,0.8); 
+  box-shadow: 13px 14px 5px rgba(180,25,70,0.8);
+}
+
 section.diplome .diplome-container .dipome-content p:first-of-type{
   font-size: 30px;
   margin: 15px 0;
 }
 
+/*********************** SECTION VAE ************************/
 
+.explication-formation{
+  text-align: justify;
+  margin: 50px auto;
+}
 
+.explication-formation h3{
+  color: var(--primary-orange);
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+section.formation #formation1 h3::before{
+  display: inline-block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--primary-blue);
+}
+
+section.formation #formation2 h3::before{
+  display: inline-block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--primary-green);
+}
+
+section.formation #formation3 h3::before{
+  display: inline-block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--primary-yellow);
+}
+
+section.diplome #formation4 h3::before{
+  display: inline-block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 100px;
+  background: var(--primary-orange);
+}
+
+.explication-formation p, .explication-formation ul{
+  color: var(--primary-blue);
+}
+
+.explication-formation ul{
+  margin: 40px 0 60px 80px;
+}
+
+.explication-formation li{
+  margin: 20px 0 0 40px;
+}
+
+.explication-formation p{
+  width: 80%;
+  text-align: justify;
+  margin: auto;
+}
 
 
 
